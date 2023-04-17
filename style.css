@@ -57,7 +57,7 @@ section{
 
 }
 .navbar a:hover,
-.navbar a.active{
+.navbar a.nav-link{
     color: var(--main-color);
 }
 #menu-icon{
@@ -72,7 +72,7 @@ section{
     justify-content: space-around;
     align-items: center;
 }
-.home-img img{
+.home-imgs img{
     border-radius:100% ;
     width: 30vw;
     height: 75vh;
