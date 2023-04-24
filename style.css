@@ -43,6 +43,9 @@ section{
     align-items: center;
     z-index: 100;
 }
+.header.sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -167,3 +170,216 @@ span{
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+#skills{
+    display:grid;
+    grid-template-columns: repeat(5,.5fr);
+    gap:2rem;
+
+}
+#skills>img{
+    width: 15rem;
+    height: 15rem;
+}
+#skills > img:hover{
+    border: .2rem solid var(--main-color);
+   
+   
+}
+.project{
+    background:var(--second-bg-color);
+}
+.project h2{
+    margin-bottom: 4rem;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    
+}
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease ;
+
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.5),var(--main-color));
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease ;
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 4rem;
+    color:rgb(99, 0, 58);
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color:rgb(99, 0, 58);
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: black;
+}
+.contact h2{
+   margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+    border: transparent;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+.footer-text p{
+    font-size: 1.6rem;
+
+
+}
+.footer-text a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+}
+.footer-text a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color); 
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+  .header{
+    padding: 2rem 3%;
+  }
+  section{
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width:764px){
+  #menu-icon{
+    display: block;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background:var(--bg-color);
+    border-top: .1rem solid rgba(0,0,0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+  
+    display: none;
+  }
+  .navbar.active{
+     display: block;
+  }
+  .navbar a{
+    color: var(--text-color);
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  }
