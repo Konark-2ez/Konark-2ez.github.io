@@ -1,20 +1,30 @@
-const resume_btn1 = document.querySelector("#resume-button-1");
-const resume_btn2 = document.querySelector("#resume-button-2");
+let menuIcon = document.getElementById("menu-icon")
+let navbar = document.querySelector(".navbar")
 
-resume_btn1.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.open(
-    "https://drive.google.com/file/d/1GfU7MINpsxg1hhx5D58duW0aaOvVOCog/view?usp=share_link"
-  );
-  window.location.href =
-    "https://drive.google.com/file/d/1GfU7MINpsxg1hhx5D58duW0aaOvVOCog/view?usp=share_link";
-});
+menuIcon.onclick=()=>{
+    menuIcon.classList.toggle('bx-x')
+    navbar.classList.toggle('active')
+}
 
-resume_btn2.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.open(
-    "https://drive.google.com/file/d/1GfU7MINpsxg1hhx5D58duW0aaOvVOCog/view?usp=share_link"
-  );
-  window.location.href =
-    "https://drive.google.com/file/d/1GfU7MINpsxg1hhx5D58duW0aaOvVOCog/view?usp=share_link";
-});
+let sections= document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () =>{
+    sections.forEach(sec=>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop-150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top< offset + height){
+            navLinks.forEach(links=>{
+                links.classList.remove('active')
+                document.querySelector('header nav a[href*=' + id + ']').classList.add
+            })
+        }
+    })
+}
+
+let header = document.querySelector('header')
+
+header.classList.toggle('sticky',window.scrollY>100);

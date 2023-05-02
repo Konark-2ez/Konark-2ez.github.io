@@ -1,305 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
-  <link rel="icon" href="https://i.pinimg.com/originals/71/ad/2d/71ad2dd175ee6678d25fee79670e1f88.png" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <title>Konark Chandra Kumar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css.css" />
-  <script src="https://kit.fontawesome.com/d6ec2f041f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <link rel="stylesheet" href="style.css">
+    <title>Konark Chandra Kumar</title>
 </head>
-
 <body>
-  <!-- Navbar Starting  -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar navbar-fixed-top" id="nav-menu">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-hidden="true">
-        <i class="fas fa-bars text-light"></i>
-      </button>
+    <!--Header Design-->
+    <header class="header">
+        <a href="./index.html" class="logo">Konark</a>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-2 mt-lg-0 mx-5" href="#home">
-          <h2 id="home">Konark</h2>
-        </a>
-        <!-- Left links -->
-        <ul class="navbar-nav me-5 mb-2 mb-lg-0" id="left_nav">
-          <li class="nav-item">
-            <a class="nav-link home text-light" href="#homes">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link about text-light about section" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link skills text-light" id="skill" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link projects text-light" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link contact text-light" href="#contacts" id="contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link resume text-light" href="#" id="resume-button-1">Resume</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav id="nav-menu" class="navbar">
+            <a  href="#home" class="nav-link home">Home</a>
+            <a id="nav-menu" href="#about" class="nav-link about">About Me</a>
+            <a id="nav-menu" href="#skills" class="nav-link skills">Skills</a>
+            <a id="nav-menu" href="#projects" class="nav-link projects">Projects</a>
+            <a id="nav-menu" href="#contact" class="nav-link contact" >Contact Me</a>
+            
+        </nav>
+    </header>
+
+  <!--Home Section-->
+  <section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello 	&#128075;</h3>
+        <h1 id="user-detail-name">I'm Konark Chandra Kumar</h1>
+        <h3>I'm a <span>Node Backend Developer</span></h3>
+        <p>Welcome to my portfolio</p>
+        
+      <a href="./resume/Konark-Kumar-Resume.pdf" download class="btn">Download Resume</a>
+
+
+
     </div>
-    <!-- Container wrapper -->
-
-    <!-- Right elements -->
-
-    <!-- Right elements -->
-  </nav>
-  <!-- Navbar -->
-
-  <div id="homes">
-    <div class="name">
-      <div>
-        <img src="forPort.png" alt="my_image" class="home-img">
-      </div>
-      <div>
-        <h1 id="user-detail-name">Konark Chandra Kumar</h1>
-        <span>Node Backend Developer</span><br><br>
-      
-
-        <a href="#"><img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAACDCAMAAADMIrsKAAAA9lBMVEVGRkbwg4rvg4rxhIv////1h43fe4FXSkrefYOyyZOYZ2k2Q0E4QkFWS0z1hY21yZVscGBCQUO5z5iqZWk3NzhgYV1ydGI1MTt2dHSrq6ulsYmgt4ZZZFOnpqJBRUT70YokLz2PfWA5PEKOnXgqPz7mwoJxZFLjvYOKeWX/2Y7RtITQfIFoUVJpXk/hv4xUUVGAW13/15e5bnPDpnSMWl26nG9sfWFyi2ZbVU1KQkh2lWmAqW+bhnFYP0jXwZiki2TEsYqOlnucXWWfloGFenFKT0nx0JmepItyYmN4gWpjV1ejgWPo6OePjo6ocnSkk3V1S1a9vb1ECt4aAAAKTElEQVR4nNVcj3ubNhNGYnZoYpOQ1t3WbuSrs6ZN7dVO1m7ej65Nv2XdurXb/v9/ZggkdCfdCdxg6O7hcTgwxxtxevWewERCyHIRZsUs0mysVrRbrZQb4XblVsdJPxIZFbo2hrQxbFRp8BV/IiayORzGlAa+rINLAi86BQopTEjHRcEkfWb9hUgwFlNuDBZno8Cf+EAumO9yZzDf5NoXXjDJtKZta2k/BW5oIpjwG7H5DOY4Hi8VTeIVac8ijIvwSso1n1IimJI6A8YrDV7H/C3NFjd/pYtg4XwQuIlr1ycEnh+EILb4/MB1sPog2SofXLyQGRxCgFwkWYAAPp3CGD5KXpMPsQBhC096LuyibrZUR9cxUDC9cCFhbEsLElMHxBfIB4ILcTdGi0AXj3DRJfPPIH2XuHZSRpqL/CBbgOXO4qJjCaxNyDp/UY8Md3OS9wUzADTF4IIFXSYfYEsIriVEy5YNxG5oZaezYX4gskvYFWl6jOWcegVeMIH36hgCH9TMDwKsSBtVQH6IMT/o3hrbjejS6ytkzl/HiLFbRo1RbP2l2Eat6QLxA3K1E+aHpvYl+rCwbrv2dZOBuYKwfeklHs68LIb5i/qf7b1yrCwxy9i41hLXhX5S704S/O0EfFa7E+yOx5JlmMjt0vW1WU739qbT8mOv+FSm3Kle1y6w6RTtq3fXf0wUxy1XpuDAwpIYty/kXzIZ0ttfRcPZwX5K9Q01voHOXHfUEu9BFE3yKJrPoyjLesY72R/ZFGilHxTevcXryeqb51n07XdD4CWHjADefD1KJpuHj77Pf/gxHxyvAPnL5cNyL882qyzK854TAuWDaJcPk6jAWeRuv0gt3rKbSZQSRD7oIleW7TuY1Xi9FObmH4bHC4YvaRMjxA/D4qUV4MeLN8BnVq/VAvIjwOuNF0hPilrHWX4YFG+ZALHA7QvyF1UxHwk/CJYfXD05OF6u3mTq+cHxbq0nNd58UlgeZXNlSqq5tjO8fjJIrB9gTVj3t+V+Yets9lNhjzfRXdeOdgEYjReEnhQ2E5z2ncq0MPHi53NlL4+OXbv1xQ4At9CTUKIBvMuK4148PSmswHt4y7VdNLDBCwBpl5yvBvwwTUajUSq/f1W27wO/fQ9nu8JLmtffJG7ffLosbC+Pzgr7Ooq+cG2zo/yl7jW00g95rmRwpLmgV36wKQzz14zS9lN443FVD+kyg4KYmV2d4Hf0ZEzkA9PfNNz9RbJIkvXsqbKX86t7rh2tyl3P9a7rDvBSehL1t4CeXKRxnKav/3+uaOJRfnjskMTx1S/lrpPofrHr+PCGpGH5wVkErC8k+OPhTdNY4z1/eB3Ae9gFyVX54M5sWz6r9STTvvl+omw5e/qosAfZ6X3XjlZP1K7n2ZXyTjvIB11v1pkg7fwOyQ+ov02+UpZn/1M2j+afupZFcNf8ZnBr/eAvbr3ZoCfz0iLMZz7HUaxHfDuEl7yXDucnpbBzx5LRk/lyXdgynz22FkVHLew6O1NfPpuv4MZg+0pq2a7eXJUDzXjy5ORCWfn54O5hCztd/aq+/XDz5pbdeMW1MKMnjf6thhJHTxJ489+qbnv964m1P353yYKye5uL8tube4BUTrk8R/xQ60lH70hcb1J4346Uukyvn55bK/C2sNPNhfpygRduDOKF/CAMXfDjG1UfT9aFeH+2N589qO3xPDvyRLxv19UxX88zIPUZtJAfhINvy/moCayO5myNRPKD+nJ7fqBlbl1vWkYO9beSzfTJ5jvUaIrPDCfg504gPwiwTuPdXywW69WrJ6VtNm+02LnbNWCgJx18kSFjS8uSxTtNis42Pqp6+nlNDMf3P90BXjBMWHxQPzj8QPS3Am/cG15KP3h6soHPLgvR8/r6ycPSzmZG7FzdVC9QeIV0u9z2/KDKjNyUElmWa+sabnO9aQe+5vkojrA6xotoQYLxYov2LeHOPiOs26retq/LwhYv3hPA+wllf846xutUmlK7aP4XPAHJzldnKxLvJ5912cAt9KRowQ+V9YRXYFiCrTcb8uHOu88Je9chWo4fUL0pW+hJDZi07vESenLL+2/55OCgl9swGq9z5al60+aDDyx/+/727f3e8JJm9aSEepIcL/L3RXkRr3t4tgDqSTxwbJMP+fu02NcT3pCeJPohiXc9HstkuXu4mM9wPmA92aDX95bLaR+Pmnh6Uhi64PmXJIK8nwdjgvqMwcvWb5OygpvssoKj86EcL8j5KEZP5otRPBolL/66uLg4v7h4lL0xMzUd39TqSE+uklTt+vtVNdd7sjKTNcffdo+3OR/a4FX2d3Vz67zAayq4jitkp94EGQH0JOQHJh+eXRZ2e3r2TWkvs7un2m44P03hlUbRwPlq3b4S/Q9V+5LzUQcHSkGY6R07z9Mt3DD/Ombw8vUbLdC6FGouXgvc0ZMN40UJd/ZlyN51kclN+dCyv5V25x+6wDC26gBw3d+8jOgebxeVckhPgvkHNF5wwvzO5/20L1VvhvQD399mIVvdHG239WbT/HSHeKl82EpP9mVEvVkBpPRDzLfv9ULZ5c5rzi2eLwnWx7+lsRIQO296e//Cncwx/ODcv6D5QeFVzxX0gZevN0lj9PpC3ab/z+RDFB2Utmu44fmSdvpB35nvx4LzUc5/weTDuroz3yNez9B8H2p1X/9OZdEBYtkTKQfHtzb5m78tA6T9wIX6QWAJ0fJ+QIFXMVncI97SvF/gRpIoOoj8zdfPClv29FB7B/ez9HPL/eH9wPmHfNInUIA31L7QMD/ky1Li9DGJ6uOl5qOwnhQuP0wu1YN96WX/eMn73ej3LYL4fcvk/UjhXfQKt83zBHCwAHjzdflk6rMB2reEg4YF1b70/QvQ36Lpator2KjheRiGH4b+/VCIHyj9MHj95uWo5QfB8sOAeIn7F0BP2n8hUG/2ijfwPGLr+qJHvGDaCSz887SD/36ee/6BtHhcvm9gKFuk5PPKks2HopZIBrSUhuU8v271pFqGfb8GHiYa5yetu937cmj175kbO+x6v2eAQXwtgcs+zdJ2Es66Egdr4cIYrAsPQnoS4YUyrnYldhFe0kVIJUy3YAz3zPVG7vdO1vXftRTjK2fXJXbrH79Xr09xd5Bvc4KPyfqusPffmAVdfSicnfYQ6PpxCYVdvxFRbBiyTjfu93p63emfjsijXHT9QDBpxyIdO8YMEOOQYH5SNOnJlp38Rkd8oHF6knJtSgh0qQSki4YY7nYQw7n6ZH65epJKDIk/0XUS3hZwaqoz6JPBYAKdypIQzmW9Eng/l/6/KlkMOrM0K6ilwDsP7Fu6dEj4/j74yq+G93MJ9vfSHDPg/9Vxvd7FRQqcAcX2gxHtC6eEPTgfsBAnDf3D28ZueH8fyezcds79oIOYMzPvq/Czgu4Nkjq0ITFk4AyNKYF/vymF080MOgHlXfUh6ikL8zVbZpmjTC/RKxKCFTGKXYfUX8OuiVqNxxYmmPmxwImLaldk0IWQoYs5hqQccASoN/8F2zoUgqjMzSwAAAAASUVORK5CYII="
-            alt="Typing SVG" /></a>
-        <p id="user-detail-intro">An enthusiastic web developer having experience of 1500+ hours of coding and building
-          with the HTML, CSS and various backend technologies. Problem-solving mindset and the ability to perform well
-          in collaboration. Looking forward to utilizing current skillset and experience to build a world-class to
-          achieve organization goals.</p>
-        <a href="https://github.com/Konark-2ez" id="contact-github" target="_blank"><i class="fa fa-github"></i></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/konark-chandra-kumar-86a1b0217/" id="contact-linkedin" target="_blank"><i
-            class="fa fa-linkedin"></i></a>
-        <br><br>
-        <a href="" target="_blank" class="resume-btn">
-          <button class="btn" id="resume-button-2">Download Resume</button>
-        </a>
-      </div>
+    <div class="home-imgs">
+        <img class="home-img" src="./forPort.png" alt="profile">
     </div>
-  </div>
-
-  <div class="skills" id="skills">
-    <div class="skill_heading">
-      <h1>Skills</h1>
-    </div>
-    <div>
-      <div class="skills-card">
-        <img class="skills-card-img"
-          src="https://seeklogo.com/images/H/html5-with-wordmark-black-white-logo-A6222B77EC-seeklogo.com.png"
-          alt="html_logo" width="100%">
-        <p class="skills-card-name"><b>HTML</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://seeklogo.com/images/C/css-3-logo-A4E6678598-seeklogo.com.png"
-          alt="css_logo">
-        <p class="skills-card-name"><b>CSS</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968509.png" alt="js_logo">
-        <p class="skills-card-name"><b>JavaScript</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://icon-library.com/images/node-js-icon/node-js-icon-2.jpg"
-          alt="node_logo">
-        <p class="skills-card-name"><b>Node JS</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img"
-          src="https://www.pngfind.com/pngs/m/511-5114755_png-file-svg-mongodb-clipart-transparent-png.png"
-          alt="mongodb_logo">
-        <p class="skills-card-name"><b>MongoDB</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/aws-3215369-2673787.png"
-          alt="aws_logo">
-        <p class="skills-card-name"><b>AWS</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/2772/2772165.png" alt="sql_logo">
-        <p class="skills-card-name"><b>SQL</b></p>
-      </div>
-      <div class="skills-card">
-        <img class="skills-card-img" src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github_logo">
-        <p class="skills-card-name"><b>GitHub</b></p>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!--About-->
 
-  <div class="about section" id="about">
-    <h2>About Me</h2>
-    <div>
-      <p id="user-detail-intro">Hello, my name is Konark Chandra Kumar and I am from Hajo in the district of Kamrup,Assam.
-        I recently graduated with a B.Tech in Computer Science and Engineering in 2022. As a full-stack web developer, I am skilled in
-        HTML, CSS, JavaScript, Node.js, MongoDB, and Express. <br> I love building robust and scalable APIs, and have experience working with <br> front-end technologies such as HTML, CSS, and JavaScript. I'm a passionate learner <br> who is constantly looking to improve my skills and stay current with industry best practices. <br> I believe in writing clean, well-documented code and always strive to follow best practices <br> to ensure the security and performance of my applications.
-      </p>
-    </div>
-    <div id="about-section-info">
-      <div>
-        <span>1500+ hours of Coding</span>
-      </div>
-      <div>
-        <span>1000+ hours of DSA</span>
-      </div>
-      <div>
-        <span>4+ Projects Experience</span>
-      </div>
-    </div>
-  </div>
-  Hi there, my name is Konark Chandra Kumar and I'm a Node.js backend developer. 
-
-  <div class="project-section" id="projects">
-    <h2>Projects</h2>
-    <div>
-      <div class="project-card">
-        <img src="images/digiMart.png" alt="">
-        <h3 class="project-title"><b>Title:</b> digiMart</h3>
-        <p class="project-description">digiMart is an ecommerce website designed using HTML, CSS and JavaScript.This project is a clone of reliance mart.
-          </p>
-        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS </span><br>
-        <a href="https://github.com/Konark-2ez/moaning-distribution-2092" class="project-github-link" target="_blank"><i class="fa fa-github"></i></a>
-        &nbsp;
-        <a href="https://tangerine-sprinkles-b765e6.netlify.app/" class="project-deployed-link" target="_blank"><i
-            class="fa fa-globe"></i></a>
-      </div>
-      <div class="project-card">
-        <img src="images/Furnstock.png" alt="">
-        <h3 class="project-title"><b>Title:</b> FurnStock</h3>
-        <p class="project-description">
-          Furnstock is an ecommerce website designed using HTML, CSS and JavaScript on the frontend and node, express and mongoDB on the backend.
-
-        </p>
-        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS | Bootstrap | MongoDB | Express | NodeJS</span><br>
-        <a href="https://github.com/Konark-2ez/earsplitting-ring-5086" class="project-github-link" target="_blank"><i
-            class="fa fa-github"></i></a>
-        &nbsp;
-        <a href="https://grand-faun-d598b5.netlify.app/" class="project-deployed-link" target="_blank"><i class="fa fa-globe"></i></a>
-      </div>
-      <div class="project-card">
-        <img src="images/Vaccine registration.png" alt="">
-        <h3 class="project-title"><b>Title:</b> Vaccine registration</h3>
-        <p class="project-description">It is a vaccine registration website designed using HTML, CSS and JavaScript.
-          </p>
-        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS </span><br>
-        <a href="#" class="project-github-link" target="_blank"><i class="fa fa-github"></i></a>
-        &nbsp;
-        <a href="https://stately-cajeta-a14142.netlify.app/" class="project-deployed-link" target="_blank"><i class="fa fa-globe"></i></a>
-      </div>
-      <div class="project-card">
-        <img src="images/Weathermap.png" alt="">
-        <h3 class="project-title"><b>Title:</b> Weathermap</h3>
-        <p class="project-description">Weathermap is a weather forecasting website designed using HTML, CSS and JavaScript.
-
-          </p>
-        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS | API</span><br>
-        <a href="https://github.com/Konark-2ez/weatherMap" class="project-github-link" target="_blank"><i class="fa fa-github"></i></a>
-        &nbsp;
-        <a href="https://classy-alfajores-4fe99d.netlify.app/" class="project-deployed-link" target="_blank"><i class="fa fa-globe"></i></a>
-      </div>
+  <section class="about" id="about">
+    <div class="about-img">
+        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-coder-computer-science-flaticons-lineal-color-flat-icons.png" alt="coder">
 
     </div>
-  </div>
-  <div class="github">
-    <div>
-      <h2>GitHub</h2>
-    </div>
-    <div>
-      <div>
-        <img id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com/?user=Konark-2ez&theme=dark&"
-          alt="">
-      </div>
-      <div>
-        <p><img id="github-stats-card" align="center"
-            src="https://github-readme-stats.vercel.app/api?username=Konark-2ez&show_icons=true&theme=dark&locale=en"
-            alt="rohit2216"></img></p>
-      </div>
-      <div>
-        <p><img id="github-top-langs" align="center"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Konark-2ez&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"></img>
-        </p>
-      </div>
-    </div>
-    <div>
-      <div id="githubcalenders" class="calendar react-activity-calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-      </div>
-    </div>
-  </div>
+    <div id="about.about.section" class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>I am a Node Backend Developer</h3>
+        <p id=" user-detail-intro">Hi there, my name is Konark Chandra Kumar and I'm a Node.js backend developer. <br> I love building robust and scalable APIs, and have experience working with <br> front-end technologies such as HTML, CSS, and JavaScript. I'm a passionate learner <br> who is constantly looking to improve my skills and stay current with industry best practices. <br> I believe in writing clean, well-documented code and always strive to follow best practices <br> to ensure the security and performance of my applications.
+        </p> 
 
-  <div class="contacts-section" id="contacts">
-    <div>
-      <h3>Contacts</h3>
+        
+        <div class="social-media">
+            <a href="https://github.com/Konark-2ez" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/konark-chandra-kumar-86a1b0217/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            
+        </div>
     </div>
-    <div>
-      <div>
-        <h3 style="color:#ff8906">Get in Touch with me:</h3><br>
-        <i class="fa-regular fa-envelope"></i> <span style="color:#ff8906">Email :</span> <span
-          id="contact-email">konarkkumar456@gmail.com</span><br><br>
-        <i class="fa fa-phone"></i> <span style="color:#ff8906">Phone-Number :</span> <span id="contact-phone"> +91
-          8761018658</span><br><br>
-        <!-- <span><b><i class="fa fa-youtube"></i> <span style="color:#ff8906">YouTube :</span></b>  Its Rohit Chauhan</span><br> -->
-        <i class="fa fa-github"></i> <span style="color:#ff8906">GitHub:</span> <span id="contact-github"> +91
-          8761018658</span><br><br>
-          <i class="fa fa-linkedin"></i> <span style="color:#ff8906">linkedin :</span> <span id="contact-linkedin"> +91
-            8761018658</span><br>
-         
+  </section>
+
+  <section class="Skills" id="skills">
     
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+          
+    
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+          
+    
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          
+   
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+          
+     
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+          
+   
+            
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+          
+               
+    
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+          
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+          
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+          
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          
+  </section>
+  <section class="project" id="projects">
+    <h2 class="heading">My Projects</h2>
+    <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="images/digiMart.png" alt="digiMart">
+     <div class="portfolio-layer">
+      <h4>digiMart</h4>
+      <p>digiMart is an ecommerce website designed using HTML, CSS and JavaScript.</p>
+      <a href="https://github.com/Konark-2ez/moaning-distribution-2092" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
+      <a href="https://tangerine-sprinkles-b765e6.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
+     </div>
+    </div>
+    <div class="portfolio-box">
+      <img src="images/Furnstock.png" alt="digiMart">
+     <div class="portfolio-layer">
+      <h4>Furnstock</h4>
+      <p>Furnstock is an ecommerce website designed using HTML, CSS and JavaScript on the frontend and node, express and mongoDB on the backend.</p>
+      <a href="https://github.com/Konark-2ez/earsplitting-ring-5086" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
+      <a href="https://grand-faun-d598b5.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
+     </div>
+    </div>
+    <div class="portfolio-box">
+      <img src="images/Vaccine registration.png" alt="digiMart">
+     <div class="portfolio-layer">
+      <h4>Vaccine registration</h4>
+      <p>It is a vaccine registration website designed using HTML, CSS and JavaScript.</p>
+      <a href="#"><i class='bx bx-link-external' target="_blank"></i>Github</a>
+      <a href="https://stately-cajeta-a14142.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
+     </div>
+    </div>
+    <div class="portfolio-box">
+      <img src="images/Weathermap.png" alt="digiMart">
+     <div class="portfolio-layer">
+      <h4>Weathermap</h4>
+      <p>Weathermap is a weather forecasting website designed using HTML, CSS and JavaScript.</p>
+      <a href="https://github.com/Konark-2ez/weatherMap" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
+      <a href="https://classy-alfajores-4fe99d.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
+     </div>
+    </div>
+  </div>
+  </section>
+
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Mobile Number">
+        <input type="email" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+   </section>
+    <footer class="footer" id="footer">
+      <div class="footer-text">
+        <p>You can also contact me in: <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="#"><i class='bx bxl-github' ></i></a></p>
+        
+         
         
       </div>
-      <div>
-        <form action="">
-          <label for=""><i class="fa fa-envelope"></i> Email Address</label><br>
-          <input type="email" placeholder="Enter Your Email"><br><br>
-          <label for=""><i class="fa fa-phone"></i> Phone Number</label><br>
-          <input type="number" placeholder="Enter Your Number"><br><br>
-          <label for=""><i class="fa fa-message"></i> Your Message</label><br>
-          <input type="text" id="message" placeholder="Enter Your Message"><br><br>
-          <input type="submit" value="Send Message">
-        </form>
+      <div class="footer-iconTop">
+        <a href="#home"> <i class='bx bxs-up-arrow-circle' ></i></a>
       </div>
-    </div>
-  </div>
-  <!-- <--------------- Contact Section End ------------------------------>
-
-  <!-- Footer Setion Start  -->
-  <footer>
-    <div class="footer">
-      <span>Made with <i class="fa fa-heart" style="color:red"></i> Konark</span>
-    </div>
-  </footer>
-  <!-- Footer Section End  -->
+    </footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
-<script src="style-switcher.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
-<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
-</script>
-<script>
-  new GitHubCalendar(".calendar", "Konark-2ez");
-</script>
 </html>
