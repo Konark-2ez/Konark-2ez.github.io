@@ -197,7 +197,7 @@ span{
     align-items: center;
     gap: 2.5rem;
 }
-.portfolio-container .portfolio-box{
+.portfolio-container .project-card{
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -205,15 +205,15 @@ span{
     display: flex;
     
 }
-.portfolio-box img{
+.project-card img{
     width: 100%;
     transition: .5s ease ;
 
 }
-.portfolio-box:hover img{
+.project-card:hover img{
     transform: scale(1.1);
 }
-.portfolio-box .portfolio-layer{
+.project-card .portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -229,7 +229,7 @@ span{
     transform: translateY(100%);
     transition: .5s ease ;
 }
-.portfolio-box:hover .portfolio-layer{
+.project-card:hover .portfolio-layer{
     transform: translateY(0);
 }
 .portfolio-layer h4{
