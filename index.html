@@ -1,174 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
-    <link rel="stylesheet" href="style.css">
-    <title>Konark Chandra Kumar</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="icon" href="https://i.pinimg.com/originals/71/ad/2d/71ad2dd175ee6678d25fee79670e1f88.png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <title>Konark Chandra Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css.css" />
+  <script src="https://kit.fontawesome.com/d6ec2f041f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
 </head>
+
 <body>
-    <!--Header Design-->
-    <header class="header">
-        <a href="./index.html" class="logo">Konark</a>
+  <!-- Navbar Starting  -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar navbar-fixed-top" id="nav-menu">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-hidden="true">
+        <i class="fas fa-bars text-light"></i>
+      </button>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav id="nav-menu" class="navbar">
-            <a  href="#home" class="nav-link home">Home</a>
-            <a id="nav-menu" href="#about" class="nav-link about">About Me</a>
-            <a id="nav-menu" href="#skills" class="nav-link skills">Skills</a>
-            <a id="nav-menu" href="#projects" class="nav-link projects">Projects</a>
-            <a id="nav-menu" href="#contact" class="nav-link contact" >Contact Me</a>
-            
-        </nav>
-    </header>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0 mx-5" href="#home">
+          <h2 id="home">Konark</h2>
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0" id="left_nav">
+          <li class="nav-item">
+            <a class="nav-link home text-light" href="#homes">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about text-light about section" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link skills text-light" id="skill" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link projects text-light" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact text-light" href="#contacts" id="contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link resume text-light" href="#" id="resume-button-1">Resume</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
 
-  <!--Home Section-->
-  <section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello 	&#128075;</h3>
-        <h1 id="user-detail-name">I'm Konark Chandra Kumar</h1>
-        <h3>I'm a <span>Node Backend Developer</span></h3>
-        <p>Welcome to my portfolio</p>
+    <!-- Right elements -->
+
+    <!-- Right elements -->
+  </nav>
+  <!-- Navbar -->
+
+  <div id="homes">
+    <div class="name">
+      <div>
+        <img src="forPort.png" alt="my_image" class="home-img">
+      </div>
+      <div>
+        <h1 id="user-detail-name">Konark Chandra Kumar</h1>
+        <span>Node Backend Developer</span><br><br>
         
-      <a href="./resume/Konark-Kumar-Resume.pdf" download class="btn">Download Resume</a>
-
-
-
-    </div>
-    <div class="home-imgs">
-        <img class="home-img" src="./forPort.png" alt="profile">
-    </div>
-  </section>
-
-  <!--About-->
-
-  <section class="about" id="about">
-    <div class="about-img">
-        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-coder-computer-science-flaticons-lineal-color-flat-icons.png" alt="coder">
-
-    </div>
-    <div id="about.about.section" class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>I am a Node Backend Developer</h3>
-        <p id=" user-detail-intro">Hi there, my name is Konark Chandra Kumar and I'm a Node.js backend developer. <br> I love building robust and scalable APIs, and have experience working with <br> front-end technologies such as HTML, CSS, and JavaScript. I'm a passionate learner <br> who is constantly looking to improve my skills and stay current with industry best practices. <br> I believe in writing clean, well-documented code and always strive to follow best practices <br> to ensure the security and performance of my applications.
-        </p> 
-
-        
-        <div class="social-media">
-            <a href="https://github.com/Konark-2ez" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/konark-chandra-kumar-86a1b0217/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-            
-        </div>
-    </div>
-  </section>
-
-  <section class="Skills" id="skills">
-    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-          
-    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-          
-    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-          
-   
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-          
-     
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
-          
-   
-            
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-          
-               
-    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-          
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          
-  </section>
-  <section class="project" id="projects">
-    <h2 class="heading">My Projects</h2>
-    <div class="portfolio-container">
-    <div class="portfolio-box">
-      <img src="images/digiMart.png" alt="digiMart">
-     <div class="portfolio-layer">
-      <h4>digiMart</h4>
-      <p>digiMart is an ecommerce website designed using HTML, CSS and JavaScript.</p>
-      <a href="https://github.com/Konark-2ez/moaning-distribution-2092" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
-      <a href="https://tangerine-sprinkles-b765e6.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
-     </div>
-    </div>
-    <div class="portfolio-box">
-      <img src="images/Furnstock.png" alt="digiMart">
-     <div class="portfolio-layer">
-      <h4>Furnstock</h4>
-      <p>Furnstock is an ecommerce website designed using HTML, CSS and JavaScript on the frontend and node, express and mongoDB on the backend.</p>
-      <a href="https://github.com/Konark-2ez/earsplitting-ring-5086" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
-      <a href="https://grand-faun-d598b5.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
-     </div>
-    </div>
-    <div class="portfolio-box">
-      <img src="images/Vaccine registration.png" alt="digiMart">
-     <div class="portfolio-layer">
-      <h4>Vaccine registration</h4>
-      <p>It is a vaccine registration website designed using HTML, CSS and JavaScript.</p>
-      <a href="#"><i class='bx bx-link-external' target="_blank"></i>Github</a>
-      <a href="https://stately-cajeta-a14142.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
-     </div>
-    </div>
-    <div class="portfolio-box">
-      <img src="images/Weathermap.png" alt="digiMart">
-     <div class="portfolio-layer">
-      <h4>Weathermap</h4>
-      <p>Weathermap is a weather forecasting website designed using HTML, CSS and JavaScript.</p>
-      <a href="https://github.com/Konark-2ez/weatherMap" target="_blank"><i class='bx bx-link-external' ></i>Github</a>
-      <a href="https://classy-alfajores-4fe99d.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i>Live</a>
-     </div>
+        <a href="#"><img
+            src=""
+            alt="Typing SVG" /></a>
+        <p id="user-detail-intro">An enthusiastic web developer having experience of 1500+ hours of coding and building
+          with the HTML, CSS and various backend technologies. Problem-solving mindset and the ability to perform well
+          in collaboration. Looking forward to utilizing current skillset and experience to build a world-class to
+          achieve organization goals.</p>
+        <a href="https://github.com/Konark-2ez" id="contact-github" target="_blank"><i class="fa fa-github"></i></a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/konark-chandra-kumar-86a1b0217/" id="contact-linkedin" target="_blank"><i
+            class="fa fa-linkedin"></i></a>
+        <br><br>
+        <a href="" target="_blank" class="resume-btn">
+          <button class="btn" id="resume-button-2">Download Resume</button>
+        </a>
+      </div>
     </div>
   </div>
-  </section>
 
-   <section class="contact" id="contact">
-    <h2 class="heading">Contact Me</h2>
+  <div class="skills" id="skills">
+    <div class="skill_heading">
+      <h1>Skills</h1>
+    </div>
+    <div>
+      <div class="skills-card">
+        <img class="skills-card-img"
+          src="https://seeklogo.com/images/H/html5-with-wordmark-black-white-logo-A6222B77EC-seeklogo.com.png"
+          alt="html_logo" width="100%">
+        <p class="skills-card-name"><b>HTML</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://seeklogo.com/images/C/css-3-logo-A4E6678598-seeklogo.com.png"
+          alt="css_logo">
+        <p class="skills-card-name"><b>CSS</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968509.png" alt="js_logo">
+        <p class="skills-card-name"><b>JavaScript</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://icon-library.com/images/node-js-icon/node-js-icon-2.jpg"
+          alt="node_logo">
+        <p class="skills-card-name"><b>Node JS</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img"
+          src="https://www.pngfind.com/pngs/m/511-5114755_png-file-svg-mongodb-clipart-transparent-png.png"
+          alt="mongodb_logo">
+        <p class="skills-card-name"><b>MongoDB</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/aws-3215369-2673787.png"
+          alt="aws_logo">
+        <p class="skills-card-name"><b>AWS</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/2772/2772165.png" alt="sql_logo">
+        <p class="skills-card-name"><b>SQL</b></p>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://pngimg.com/uploads/github/github_PNG40.png" alt="github_logo">
+        <p class="skills-card-name"><b>GitHub</b></p>
+      </div>
+    </div>
+  </div>
 
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
+  <!-- <------- About Section Start ---------->
+
+  <div class="about section" id="about">
+    <h2>About Me</h2>
+    <div>
+      <p id="user-detail-intro">Hello, my name is Konark Chandra Kumar and I am from Hajo in district Kamrup, Assam.
+        I recently graduated with a B.Tech in Computer Science and Engineering in 2022. As a full-stack web developer, I am skilled in
+        HTML, CSS, JavaScript, Node.js, MongoDB, and Express. With my education and expertise, I have a strong
+        foundation for building end-to-end web applications that incorporate both front-end and back-end development.
+      </p>
+    </div>
+    <div id="about-section-info">
+      <div>
+        <span>1500+ hours of Coding</span>
       </div>
-      <div class="input-box">
-        <input type="text" placeholder="Mobile Number">
-        <input type="email" placeholder="Email Subject">
+      <div>
+        <span>1000+ hours of DSA</span>
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-   </section>
-    <footer class="footer" id="footer">
-      <div class="footer-text">
-        <p>You can also contact me in: <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="#"><i class='bx bxl-github' ></i></a></p>
-        
-         
-        
+      <div>
+        <span>2+ Projects Experience</span>
       </div>
-      <div class="footer-iconTop">
-        <a href="#home"> <i class='bx bxs-up-arrow-circle' ></i></a>
+    </div>
+  </div>
+
+  <!-- <----------- About Section End ----------->
+
+  <!-- <--------------Project Section Start----------------->
+  <div class="project-section" id="projects">
+    <h2>Projects</h2>
+    <div>
+      <div class="project-card">
+        <img src="images/digiMart.png" alt="">
+        <h3 class="project-title"><b>Title:</b> HealthKart</h3>
+        <p class="project-description">HealthKart is an online health and fitness store for men and women, which offers
+          fitness products, services and community to help consumers achieve their fitness goals. It was an <b>individual</b> project which is build in the span of 5 days.</p>
+        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS </span><br>
+        <a href="https://github.com/Rohit2216/gas-scarecrow-3264" class="project-github-link" target="_blank"><i
+            class="fa fa-github"></i></a>
+        &nbsp;
+        <a href="https://warm-bunny-72f6b8.netlify.app/" class="project-deployed-link" target="_blank"><i
+            class="fa fa-globe"></i></a>
       </div>
-    </footer>
+      <div class="project-card">
+        <img src="images/Furnstock.png" alt="">
+        <h3 class="project-title"><b>Title:</b> Pepperfry</h3>
+        <p class="project-description">Pepperfry is an Indian online marketplace for furniture and home décor. The
+          company is headquartered in Mumbai, Maharashtra. This was a <b>group</b> project build in the span of 5 days.
+        </p>
+        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS | Bootstrap | API</span><br>
+        <a href="https://github.com/Rohit2216/nosy-tree-9718-" class="project-github-link" target="_blank"><i
+            class="fa fa-github"></i></a>
+        &nbsp;
+        <a href="https://gorgeous-souffle-1a17e4.netlify.app/" class="project-deployed-link" target="_blank"><i
+            class="fa fa-globe"></i></a>
+      </div>
+      <div class="project-card">
+        <img src="images/Vaccine registration.png" alt="">
+        <h3 class="project-title"><b>Title:</b> Sephora</h3>
+        <p class="project-description">Sephora, as an e-commerce pioneer, faced a problem that is becoming increasingly
+          common for companies – an outdated technology platform. This was an <b>individual</b> project build in the
+          span of 5 days.</p>
+        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS | Node JS | MongoDB</span><br>
+        <a href="https://github.com/Rohit2216/motionless-division-7590" class="project-github-link" target="_blank"><i
+            class="fa fa-github"></i></a>
+        &nbsp;
+        <a href="https://beauty-art-by-rohit.netlify.app" class="project-deployed-link" target="_blank"><i
+            class="fa fa-globe"></i></a>
+      </div>
+      <div class="project-card">
+        <img src="images/Weathermap.png" alt="">
+        <h3 class="project-title"><b>Title:</b> Sephora</h3>
+        <p class="project-description">Sephora, as an e-commerce pioneer, faced a problem that is becoming increasingly
+          common for companies – an outdated technology platform. This was an <b>individual</b> project build in the
+          span of 5 days.</p>
+        <span class="project-tech-stack"><b>Tech Stacks:</b> HTML | CSS | JS | Node JS | MongoDB</span><br>
+        <a href="https://github.com/Rohit2216/motionless-division-7590" class="project-github-link" target="_blank"><i
+            class="fa fa-github"></i></a>
+        &nbsp;
+        <a href="https://beauty-art-by-rohit.netlify.app" class="project-deployed-link" target="_blank"><i
+            class="fa fa-globe"></i></a>
+      </div>
+
+    </div>
+  </div>
+  <!-- <------------------ Project Section End ------------>
+
+  <!-- <----------------- GitHub Section Start -------------->
+  <div class="github">
+    <div>
+      <h2>GitHub</h2>
+    </div>
+    <div>
+      <div>
+        <img id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=Konark-2ez&theme=dark&"
+          alt="">
+      </div>
+      <div>
+        <p><img id="github-stats-card" align="center"
+            src="https://github-readme-stats.vercel.app/api?username=Konark-2ez&show_icons=true&theme=dark&locale=en"
+            alt="rohit2216"></img></p>
+      </div>
+      <div>
+        <p><img id="github-top-langs" align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Konark-2ez&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"></img>
+        </p>
+      </div>
+    </div>
+    <div>
+      <div id="githubclaenders" class="calendar react-activity-calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+    </div>
+  </div>
+  <!-- <-------------------- GitHub Section End ------------------>
+
+  <!-- <--------------- Contact Section Start ------------------------>
+  <div class="contacts-section" id="contacts">
+    <div>
+      <h3>Contacts</h3>
+    </div>
+    <div>
+      <div>
+        <h3 style="color:#ff8906">Get in Touch with me:</h3><br>
+        <i class="fa-regular fa-envelope"></i> <span style="color:#ff8906">Email :</span> <span
+          id="contact-email">konarkkumar456@gmail.com</span><br>
+        <i class="fa fa-phone"></i> <span style="color:#ff8906">Phone-Number :</span> <span id="contact-phone"> +91
+          8761018658</span><br>
+        <!-- <span><b><i class="fa fa-youtube"></i> <span style="color:#ff8906">YouTube :</span></b>  Its Rohit Chauhan</span><br> -->
+        <span><b><i class="fa fa-cake"></i> <span style="color:#ff8906">DOB :</span></b> 22-01-2001</span><br>
+        <span><b><i class="fa fa-left"></i> <span style="color:#ff8906">Role :</span></b> Node Backed
+          Developer</span><br>
+        <span><b><i class="fa fa-globe"></i> <span style="color:#ff8906">Tech Stacks :</span></b> HTML | CSS |
+          JavaScript | Node JS | MongoDB | Express <br>
+        </span><br>
+        <!-- <span><b><span style="color:#ff8906">Internship :</span></b> MERN stack 6 months Internship with Edureka. -->
+      </div>
+      <div>
+        <form action="">
+          <label for=""><i class="fa fa-envelope"></i> Email Address</label><br>
+          <input type="email" placeholder="Enter Your Email"><br><br>
+          <label for=""><i class="fa fa-phone"></i> Phone Number</label><br>
+          <input type="number" placeholder="Enter Your Number"><br><br>
+          <label for=""><i class="fa fa-message"></i> Your Message</label><br>
+          <input type="text" id="message" placeholder="Enter Your Message"><br><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <--------------- Contact Section End ------------------------------>
+
+  <!-- Footer Setion Start  -->
+  <footer>
+    <div class="footer">
+      <span>Made with <i class="fa fa-heart" style="color:red"></i> Konark</span>
+    </div>
+  </footer>
+  <!-- Footer Section End  -->
 </body>
-<script src="./script.js"></script>
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="./src/index.js"></script>
+<script src="src/style-switcher.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+<script>
+  new GitHubCalendar(".calendar", "rohit2216");
+</script>
