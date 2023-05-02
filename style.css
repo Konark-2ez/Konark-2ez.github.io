@@ -121,7 +121,7 @@ body {
     background-color: #ff8906;
     color: white;
 }
-#resume-button-1{
+#resume-button-2{
     display: block;
     width: 20rem;
     border:.2rem solid #ff8906;
@@ -131,7 +131,7 @@ body {
     border-radius: 2rem;
     
 }
-#resume-button-1:hover{
+#resume-button-2:hover{
     background-color: #7cc1cc;
 }
 
