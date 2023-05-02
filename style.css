@@ -134,7 +134,18 @@ body {
 #resume-button-2:hover{
     background-color: #7cc1cc;
 }
-
+#resume-button{
+    display: block;
+    width: 20rem;
+    border:.2rem solid #ff8906;
+    height:2rem;
+    padding-top: .5rem;
+    padding-bottom:3.5rem;
+    border-radius: 2rem;
+}
+#resume-button:hover{
+    background-color: #7cc1cc;
+}
 #skill {
     text-align: left;
 }
