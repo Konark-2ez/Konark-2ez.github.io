@@ -33,6 +33,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 101;
+    box-shadow: rgba(214, 218, 218, 0.35) 0px 5px 15px;
     /* border:2px solid red; */
 }
 
@@ -132,19 +133,25 @@ body {
     
 }
 #resume-button-2:hover{
-    background-color: #7cc1cc;
+    background-color:  #00FFFF;
+    box-shadow: rgba(49, 145, 158, 0.35) 0px 5px 15px;
+    color: black;
 }
 #resume-button{
+    color:white;
+    font-size: 1.2rem;
     display: block;
     width: 20rem;
     border:.2rem solid #ff8906;
     height:2rem;
-    padding-top: .5rem;
-    padding-bottom:3.5rem;
+    padding-top: .9rem;
+    padding-bottom:3.2rem;
     border-radius: 2rem;
 }
 #resume-button:hover{
-    background-color: #7cc1cc;
+    background-color: #00FFFF;
+    box-shadow: rgba(49, 145, 158, 0.35) 0px 5px 15px;
+    color: black;
 }
 #skill {
     text-align: left;
