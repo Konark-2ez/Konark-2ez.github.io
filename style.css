@@ -418,7 +418,7 @@ body {
 .contacts-section>div:nth-child(2) {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 20x;
     color: #0f0e17;
     padding: 40px;
@@ -426,7 +426,7 @@ body {
 
 .contacts-section>div:nth-child(2)>div:nth-child(1) {
     width: 95%;
-    text-align: left;
+    text-align: center;
     font-size: 17px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 13px;
