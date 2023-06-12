@@ -130,6 +130,7 @@ body {
     padding-top: .5rem;
     padding-bottom:3.5rem;
     border-radius: 2rem;
+    cursor:pointer;
     
 }
 #resume-button-2:hover{
